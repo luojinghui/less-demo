@@ -7,7 +7,7 @@
     `<link rel="stylesheet/less" type="text/css" href="../less/style.css"/>`
 2. 在引入less.js文件之前，先配置less：
  
-    `less = {
+    less = {
         env: "development", // or "production"        
         async: false,       // load imports async        
         fileAsync: false,   // load imports async when in a page under        
@@ -20,4 +20,4 @@
         // entry less file
         rootpath: ":/a.com/"// a path to add on to the start of every url
         //resource
-    };`
+    };
