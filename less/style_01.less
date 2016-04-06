@@ -10,11 +10,26 @@
   -ms-box-shadow: @color @c;
   box-shadow: @color @c;
 }
+
 .inline-block() {
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
+
 .border(@length, @shape, @color) {
   border: @arguments;
+}
+
+.ba(@origin:top, @color-one:#2090FF, @color-two:#FF8D8D, @color-three:#fff) {
+  background-color: @color-one;
+  background-image: -webkit-linear-gradient(@origin, @color-one, @color-two, @color-three);
+  background-image: -moz-linear-gradient(@origin, @color-one, @color-two, @color-three);
+  background-image: -o-linear-gradient(@origin, @color-one, @color-two, @color-three);
+  background-image: -ms-linear-gradient(@origin, @color-one, @color-two, @color-three);
+  background-image: linear-gradient(@origin, @color-one, @color-two, @color-three);
+}
+
+.reflect (@length: 50%, @opacity: 0.2){
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(@length, transparent), to(rgba(255,255,255,@opacity)));
 }

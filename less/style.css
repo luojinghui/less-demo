@@ -8,3 +8,17 @@
     .inline-block();
     width: 900px;
 }
+
+.ba {
+    .ba(92deg, #fff, #FF8D8D, #2090FF);
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    .reflect();
+}
+.filter {
+    width: 200px;
+    height: 200px;
+    background: #FF9090;
+    .reflect();
+}
