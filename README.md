@@ -22,5 +22,6 @@
         //resource
     };
 3. 引入less.js并且加入持续监听less变化
+
     `<script type="text/javascript" src="../js/less.js"></script>
      <script>less.watch();</script>`
