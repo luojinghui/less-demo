@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width ,   initial-scale=1.0 ,   maximum-scale=1.0 ,   user-scalable=0">
     <title>less_demo_01</title>
+    <link rel="stylesheet/less" type="text/css" href="../less/style_01.less"/>
+    <!--<link rel="stylesheet" href="../css/style.css"/>-->
 </head>
 <body>
-    <div class="content">
-
-    </div>
+    <h1 class="content">
+        HELLO WORLD!
+    </h1>
 </body>
+<script>
+    less = {
+
+        env: "development", // or "production"
+
+        async: false,       // load imports async
+
+        fileAsync: false,   // load imports async when in a page under
+
+        // a file protocol
+
+        poll: 1000,         // when in watch mode, time in ms between polls
+
+        functions: {},      // user functions, keyed by name
+
+        dumpLineNumbers: "comments", // or "mediaQuery" or "all"
+
+        relativeUrls: false,// whether to adjust url's to be relative
+
+        // if false, url's are already relative to the
+
+        // entry less file
+
+        rootpath: ":/a.com/"// a path to add on to the start of every url
+
+        //resource
+
+    };
+</script>
+<script type="text/javascript" src="../js/less.js"></script>
+<script>less.watch();</script>
 </html>
