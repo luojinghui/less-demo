@@ -1,16 +1,20 @@
-@import "style_02.less";
-
-@ye: #ccc;
-
-* {
-  margin: 0px;
-  padding: 0px;
+* {margin: 0px; padding: 0px;}
+.red(@color,@width,@height) {
+  background: @color;
 }
 
-.content {
-  .red(@ye,200px,50%);
-  .box-shadow(0 0 12px 0px, #CCC);
-  text-align: center;
-  margin: 20px;
-  color: aliceblue;
+.box-shadow(@color:1px 1px 8px 0px, @c:blue) {
+  -webkit-box-shadow: @color @c;
+  -moz-box-shadow: @color @c;
+  -o-box-shadow: @color @c;
+  -ms-box-shadow: @color @c;
+  box-shadow: @color @c;
+}
+.inline-block() {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.border(@length, @shape, @color) {
+  border: @arguments;
 }
