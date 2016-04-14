@@ -16,9 +16,21 @@
     width: 100%;
     .reflect();
 }
+
 .filter {
     width: 200px;
-    height: 200px;
+    height: 50px;
     background: #FF9090;
-    .reflect();
+    .reflect(70%, 0.1);
 }
+
+/*.button {*/
+    /*.button(#f65131, #ccc);*/
+/*}*/
+/*a.button {*/
+    /*.button(orange);*/
+/*}*/
+/*.border {*/
+    /*.border(2);*/
+/*}*/
+
