@@ -4,37 +4,42 @@
 ### 准备Less
 1. 在html头部引入less文件:
  
-    `<link rel="stylesheet/less" type="text/css" href="../less/style.css"/>`
+    ```
+    <link rel="stylesheet/less" type="text/css" href="../less/style.css"/>
+    ```
+    
 2. 在引入less.js文件之前，先配置less：
  
- 	`var less = {` 	
- 	
-    `env: 'development', // or "production"`                
+ 	```
+ 	var less = {
+    env: 'development', // or "production"
     
-    `async: false,       // load imports async`        
+    async: false,       // load imports async
     
-    `fileAsync: false,   // load imports async when in a page under`        
+    fileAsync: false,   // load imports async when in a page under   
     
-    `// a file protocol`        
+    // a file protocol        
     
-    `poll: 1000,         // when in watch mode, time in ms between polls`
+    poll: 1000,         // when in watch mode, time in ms between polls
     
-    `functions: {},      // user functions, keyed by name`
+    functions: {},      // user functions, keyed by name
     
-    `dumpLineNumbers: "comments", // or "mediaQuery" or "all"`
+    dumpLineNumbers: "comments", // or "mediaQuery" or "all"
     
-    `relativeUrls: false,// whether to adjust url's to be relative`
+    relativeUrls: false,// whether to adjust url's to be relative
     
-    `// if false, url's are already relative to the`
+    // if false, url's are already relative to the
     
-    `// entry less file`
+    // entry less file
     
-    `rootpath: ":/a.com/"// a path to add on to the start of every url`
-      
-   	`};`
+    rootpath: ":/a.com/"// a path to add on to the start of every url
+   	};
+   	```
 3. 引入less.js并且加入持续监听less变化
 
-    `<script type="text/javascript" src="../js/less.js"></script>`
+    ```
+    <script type="text/javascript" src="../js/less.js"></script>
     
-    `<script>less.watch();</script>`
+    <script>less.watch();</script>
+    ```
 ### 用法
