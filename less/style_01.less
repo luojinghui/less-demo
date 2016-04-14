@@ -210,3 +210,10 @@
     height: 40px;
     width: 400px;
 }
+
+@height: `$('.img').height()`;
+.s-h {
+  height: unit(@height, px);
+  width: 400px;
+  background-image: linear-gradient(92deg, black, white);
+}
