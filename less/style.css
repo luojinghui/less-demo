@@ -24,13 +24,17 @@
     .reflect(70%, 0.1);
 }
 
-/*.button {*/
-    /*.button(#f65131, #ccc);*/
-/*}*/
-/*a.button {*/
-    /*.button(orange);*/
-/*}*/
-/*.border {*/
-    /*.border(2);*/
-/*}*/
+.button {
+    .button(#f65131, #ccc);
+}
+a.button {
+    .button(orange);
+}
+.border {
+    .border(2);
+}
 
+
+.aa {
+    display: flex;
+}
